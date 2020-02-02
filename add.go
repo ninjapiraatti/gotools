@@ -6,6 +6,7 @@ package gotools
 
 var answer int
 
-func add(x int, y int) int {
+// Add adds two numbers
+func Add(x int, y int) int {
 	return x + y
 }
