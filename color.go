@@ -3,14 +3,14 @@ package gotools
 import "fmt"
 
 const (
-	InfoColor    = "\033[1;34m%s\033[0m"
-	NoticeColor  = "\033[1;36m%s\033[0m"
-	WarningColor = "\033[1;33m%s\033[0m"
-	ErrorColor   = "\033[1;31m%s\033[0m"
-	DebugColor   = "\033[0;36m%s\033[0m"
+	Cyan    = "\033[0;96m%s\033[0m"
+	Red     = "\033[0;91m%s\033[0m"
+	Yellow  = "\033[0;93m%s\033[0m"
+	Green   = "\033[0;92m%s\033[0m"
+	Magenta = "\033[0;95m%s\033[0m"
 )
 
-// Color colors the output
-func Color() {
-	fmt.Printf(NoticeColor, "Notice")
+// Color colors the input string
+func Color(color string, text string) {
+	fmt.Printf(color, text)
 }
